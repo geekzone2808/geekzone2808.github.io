@@ -1,0 +1,17 @@
+/*Begin: Estilos para el boton de 'Ver Pelicula'*/
+.GoToLink{
+    color:white; !important
+    width:100%;
+    background-color:brown; 
+    text-align:center; 
+    border-radius:10px; 
+    font-weight:bold; 
+    font-size:2em; 
+    padding:10px 0 10px 0}
+    
+      .GoToLink:hover{
+    background-color:goldenrod;
+    cursor:pointer;
+    }
+
+/*END: Estilos para el boton de 'Ver Pelicula'*/
