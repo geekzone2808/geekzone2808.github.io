@@ -1,7 +1,8 @@
-var acc = document.getElementsByClassName("accordion");
-var i;
 var click=0;
 var altura;
+
+var acc = document.getElementsByClassName("accordion");
+var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -10,9 +11,7 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     } else {
-
-      panel.style.maxHeight = altura = panel.scrollHeight + "px";
-
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
