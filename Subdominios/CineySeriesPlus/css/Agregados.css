@@ -15,3 +15,66 @@
     }
 
 /*END: Estilos para el boton de 'Ver Pelicula'*/
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: darkred;
+  color: white;
+  font-weight:bold;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius:4px 4px 0px 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: darkred;
+}
+
+
+/*Begin:  Estilos de Acordeon para el cuadro de "Ver Temporadas" */
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+ padding: 0px 10px;
+  background-color:;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#arrow{
+float:right;
+}
+
+.enlace{
+background-color:brown;
+margin-top:0.2em;
+padding:5px;
+color:white;
+text-align:center;
+font-weight:bold;
+border-radius: 10px 10px 10px 10px;
+}
+
+.enlace:hover{
+background-color:chocolate;
+}
+
+.panel a{
+text-decoration:none;
+font-size:1.2em;
+}
+
+/*END:  Estilos de Acordeon para el cuadro de "Ver Temporadas" */
+
+
+body{
+	background-color:#303033;
+	
+}
