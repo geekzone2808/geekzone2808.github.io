@@ -13,3 +13,12 @@ function getCookie(cname) {
     }
     return "";
   }
+  
+  
+var x=getCookie("video");
+var altura=getCookie("altura");
+console.log("cookie: ",x);
+document.getElementById("frame").setAttribute("src","https://geekzone.pythonanywhere.com/video/"+x);
+if(altura!=""){
+document.getElementById("frame").setAttribute("height",altura);
+}
