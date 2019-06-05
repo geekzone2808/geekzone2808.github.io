@@ -14,11 +14,17 @@ function getCookie(cname) {
     return "";
   }
   
-  
+window.onload=function(){
 var x=getCookie("video");
 var altura=getCookie("altura");
 console.log("cookie: ",x);
 document.getElementById("frame").setAttribute("src","https://geekzone.pythonanywhere.com/video/"+x);
 if(altura!=""){
 document.getElementById("frame").setAttribute("height",altura);
+}
+}
+
+function setCookie(video,altura){
+	document.cookie = 'video='+video+';  domain=cineyseriesplus.blogspot.com ; path=/p/'; 
+	document.cookie = 'altura='+altura+'px; domain=cineyseriesplus.blogspot.com ;path=/p/';" 	
 }
